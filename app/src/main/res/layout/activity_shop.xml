@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.commoditypurchasecalculation.ShopActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/zongjia"
+        android:layout_below="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总价:"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/zprice"
+        android:layout_below="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zongjia"
+        android:layout_alignBottom="@+id/zongjia"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/zongjia"
+        android:text="0"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/goumai"
+        android:layout_below="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/zprice"
+        android:layout_marginRight="23dp"
+        android:text="购买"
+        />
+
+</RelativeLayout>
